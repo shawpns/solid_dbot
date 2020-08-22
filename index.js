@@ -56,7 +56,7 @@ client.on('message', message => {
   if (message.content === 'a.test') {
     const embed = new RichEmbed()
       .setTitle('test')
-      .setColor(0xff0000)
+      .setColor(0xBB8FCE)
       .setDescription('This will be changed but i hope you enjoy my bot');
     message.channel.send(embed);
   }
@@ -68,7 +68,7 @@ client.on('message', message => {
     if (message.content === 'a.help') {
       const embed = new RichEmbed()
         .setTitle('Help!')
-        .setColor(0xff0000)
+        .setColor(0xBB8FCE)
         .setDescription('Commands: a.ban <user> a.kick <user>, what is my dp (shows your avatar). **Still a W.I.P so i will be adding more and more as i go!** ');
       message.channel.send(embed);
     }
@@ -78,8 +78,8 @@ client.on('message', message => {
     if (message.content === 'a.info') {
       const embed = new RichEmbed()
         .setTitle('bot information')
-        .setColor(0xff00e1)
-        .setDescription('This bot was made in october 2018 by Electric Bread. I abandoned this bot after a week of coding it, But im going to code it some more :)');
+        .setColor(0xBB8FCE)
+        .setDescription('This bot was made in 2020 by Abhijit ShaW. Ping Me For More INFO :)');
       message.channel.send(embed);
     }
   });
