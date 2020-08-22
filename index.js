@@ -16,7 +16,7 @@ client.on('ready', () => {
 // The bot responds to these messages
 client.on('message', msg => {
   if (msg.content === 'hi') {
-    msg.reply('hello! whats up ${user.tag}');
+    msg.reply('hello! whats up');
   }
 });
 
