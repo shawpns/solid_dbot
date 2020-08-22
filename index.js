@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const { Client, RichEmbed, Attachment } = require('discord.js');
-prefix = ("!")
+prefix = ("a.")
 
 // Bread Bot!
 // Coded by Electric Bread!
@@ -15,14 +15,14 @@ client.on('ready', () => {
 
 // The bot responds to these messages
 client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
+  if (msg.content === 'hi') {
+    msg.reply('hello! whats up ${user.tag}');
   }
 });
 
 
 client.on('message', msg => {
-  if (msg.content === 'Gay') {
+  if (msg.content === 'gay') {
     msg.reply('NO U');
   }
 });
@@ -30,21 +30,21 @@ client.on('message', msg => {
 // Links
 
 client.on('message', msg => {
-  if (msg.content === '!youtube') {
-    msg.reply('https://www.youtube.com/channel/UCFuITqL_LUODqQgTzcHMfFQ?view_as=subscriber');
+  if (msg.content === 'a.yt') {
+    msg.reply('https://www.youtube.com/channel/UCpSINMoznmQgX0UPKbQOecQ');
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '!website') {
-    msg.reply('https://electricbread.000webhostapp.com/');
+  if (msg.content === 'a.site') {
+    msg.reply('https://www.youtube.com/channel/UCpSINMoznmQgX0UPKbQOecQ');
   }
 })
 
 // Avatar command
 
 client.on('message', message => {
-    if (message.content === 'What is my avatar') {
+    if (message.content === 'what is my dp') {
       message.reply(message.author.avatarURL);
     }
   });
@@ -53,9 +53,9 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-  if (message.content === '!Bread') {
+  if (message.content === 'a.test') {
     const embed = new RichEmbed()
-      .setTitle('Bread')
+      .setTitle('test')
       .setColor(0xff0000)
       .setDescription('This will be changed but i hope you enjoy my bot');
     message.channel.send(embed);
@@ -65,17 +65,17 @@ client.on('message', message => {
   // help command
 
   client.on('message', message => {
-    if (message.content === '!help') {
+    if (message.content === 'a.help') {
       const embed = new RichEmbed()
         .setTitle('Help!')
         .setColor(0xff0000)
-        .setDescription('Commands: !ban @user#1111 !kick @user#1111, What is my avatar (shows your avatar). **Still a W.I.P so i will be adding more and more as i go!** ');
+        .setDescription('Commands: a.ban <user> a.kick <user>, what is my dp (shows your avatar). **Still a W.I.P so i will be adding more and more as i go!** ');
       message.channel.send(embed);
     }
   });
 
   client.on('message', message => {
-    if (message.content === '!info') {
+    if (message.content === 'a.info') {
       const embed = new RichEmbed()
         .setTitle('bot information')
         .setColor(0xff00e1)
@@ -89,7 +89,7 @@ client.on('message', message => {
   client.on('message', message => {
     if (!message.guild) return;
   
-    if (message.content.startsWith('!kick')) {
+    if (message.content.startsWith('a.kick')) {
     
       const user = message.mentions.users.first();
 
@@ -115,7 +115,7 @@ client.on('message', message => {
   client.on('message', message => {
     if (!message.guild) return;
   
-    if (message.content.startsWith('!ban')) {
+    if (message.content.startsWith('a.ban')) {
       const user = message.mentions.users.first();
       if (user) {
         const member = message.guild.member(user);
@@ -140,7 +140,7 @@ client.on('message', message => {
   // Welcome message
 
   client.on('guildMemberAdd', member => {
-    const channel = member.guild.channels.find(ch => ch.name === 'welcome-channel');
+    const channel = member.guild.channels.find(ch => ch.name === 'welcome');
     if (!channel) return;
     channel.send(`Welcome to the server, ${member}`);
   });
@@ -148,7 +148,7 @@ client.on('message', message => {
   // Attachments
 
   client.on('message', message => {
-    if (message.content === '!rip') {
+    if (message.content === 'a.rip') {
         const attachment = new Attachment('https://i.imgur.com/w3duR07.png');
         message.channel.send(attachment);
     }
@@ -161,7 +161,7 @@ client.on('message', message => {
 client.on('message', message => {
   if (!message.guild) return;
 
-  if (message.content === '!join') {
+  if (message.content === 'a.join') {
     if (message.member.voiceChannel) {
       message.member.voiceChannel.join()
         .then(connection => { 
@@ -174,4 +174,4 @@ client.on('message', message => {
   }
 });
 
-client.login('Your token ');
+client.login('NzQ2NjkxOTU5NzA3NTMzMzc0.X0EBFA.rvnlEQOJhuAUk-UW75dzk2tzark');
