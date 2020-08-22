@@ -1,7 +1,7 @@
 {
-  "name": "breadbot",
+  "name": "ShaW",
   "version": "1.0.0",
-  "description": "",
+  "description": "opopppp",
   "main": "index.js",
   "dependencies": {
     "discord.js": "^11.4.2"
@@ -12,6 +12,6 @@
   "start": "node index.js"
 },
   "keywords": [],
-  "author": "",
+  "author": "A.ShaW",
   "license": "ISC"
 }
