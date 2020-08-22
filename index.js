@@ -3,10 +3,10 @@ const client = new Discord.Client();
 const { Client, RichEmbed, Attachment } = require('discord.js');
 prefix = ("a.")
 
-// Bread Bot!
-// Coded by Electric Bread!
+// Abhijit Shaw
+// Coded by ShaW
 // Will prob be a open source soon :)
-// Sub to my youtube channel https://www.youtube.com/channel/UCFuITqL_LUODqQgTzcHMfFQ?view_as=subscriber
+// Sub to my youtube channel https://www.youtube.com/channel/UCpSINMoznmQgX0UPKbQOecQ
 
 // Prints that the bot is ready in cmd
 client.on('ready', () => {
