@@ -1,6 +1,6 @@
 # solid
 
-Open source discord bot made by Electric Bread 
+Open source discord bot made by ShaW 
 
 
 How to use!:
