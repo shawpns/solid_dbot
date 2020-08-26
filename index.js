@@ -140,9 +140,9 @@ client.on('message', message => {
   // Welcome message
 
   client.on('guildMemberAdd', member => {
-    const channel = member.guild.channels.find(ch => ch.name === 'welcome');
+    const channel = member.guild.channels.find(ch => ch.name === 'visitors');
     if (!channel) return;
-    channel.send(`Welcome to the server, ${member}`);
+    channel.send(`Abe ShaW, ${member} server mai aya hai.. ok, ${member}, ShaW aap ka wait kor raha hai...`);
   });
 
   // Attachments
