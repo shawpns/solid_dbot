@@ -30,7 +30,7 @@ client.on('message', msg => {
 // Links
 
 client.on('message', msg => {
-  if (msg.content === 'a.yt') {
+  if (msg.content === 'yt') {
     msg.reply('https://www.youtube.com/channel/UCpSINMoznmQgX0UPKbQOecQ');
   }
 })
